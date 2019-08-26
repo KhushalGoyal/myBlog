@@ -1,5 +1,13 @@
 <mat-toolbar color="primary" class="app-toolbar-fixed-top">
   <a (click)="navigate()">MyBlog</a>
   <span class="spacer"></span>
-  <app-login></app-login>
+  <span *ngIf="!showLogin">
+    <app-login></app-login>
+  </span>
+  <span *ngIf="showLogin">
+    <mat-icon class="app-header-icon app-margin-right" matTooltip="Add Blog" (click)="navigatetoaddblog()">add</mat-icon>
+    <mat-icon class="app-header-icon" matTooltip="Logout" (click)="logout()">
+        exit_to_app
+    </mat-icon>
+  </span>
 </mat-toolbar>

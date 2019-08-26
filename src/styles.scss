@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 html, body { height: 100%; }
 
@@ -12,45 +12,56 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     position: absolute;
     overflow: auto;
 }
+
 html {
     overflow: scroll;
     overflow-x: hidden;
 }
+
 ::-webkit-scrollbar {
     width: 0px;  /* Remove scrollbar space */
     background: transparent;  /* Optional: just make scrollbar invisible */
 }
+
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
     background: #FF0000;
 }
+
 .app-icon {
     cursor: pointer;
     padding-left: 20px;
 }
+
 .app-post{
     margin: 10px;
 }
+
 .app-icon-align-right{
     text-align: right
 }
+
 .app-toolbar-fixed-top{
     position: sticky;
     position: -webkit-sticky; /* For macOS/iOS Safari */
     top: 0; /* Sets the sticky toolbar to be on top */
     z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
 }
+
 .spacer {
     flex: 1 1 auto;
 }
+
 .app-header-icon{
     cursor: pointer;
 }
+
 .app-form-strech{
   display: flex;
   padding-top: 10px;
   flex-direction: column;
 }
+
 @media only screen and (max-width: 650px) {
   .blogpost-app {
     height: 100%;
@@ -60,6 +71,7 @@ html {
     overflow: auto;  
   }
 }
+
 .app-logo-align{
     width: 130px;
     height: 130px;
@@ -69,4 +81,13 @@ html {
 }
 .app-logo{
     text-align: center;
+}
+.app-margin-right{
+    padding-right: 20px;
+}
+.app-class-error{
+    font-weight: 100;
+    font-style: oblique;
+    font-size: smaller;
+    color: red;
 }

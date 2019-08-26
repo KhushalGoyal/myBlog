@@ -4,9 +4,12 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [{
     path: '',
     loadChildren: './blogposts/blogpost.module#BlogPostModule'
-},{
+    },{
     path:'home',
     loadChildren: './blogposts/blogpost.module#BlogPostModule'
+  },{
+    path:'addBlog',
+    loadChildren: './addBlog/addBlog.module#AddBlogModule'
   }];
 
 @NgModule({

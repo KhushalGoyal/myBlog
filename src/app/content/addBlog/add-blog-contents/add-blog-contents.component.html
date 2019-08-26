@@ -1,0 +1,27 @@
+<div class="app-form-strech" [formGroup]='addBlog' #formLayout>
+  <mat-form-field>
+    <input matInput type="text" formControlName='title' placeholder="Title">
+  </mat-form-field>
+  <div class="app-class-error" *ngIf="formControle.title.invalid && (formControle.title.dirty || formControle.title.touched)">
+    Please enter title.
+  </div>
+  <br>
+  <mat-form-field>
+    <input matInput type="text" formControlName='author' placeholder="Author">
+  </mat-form-field>
+  <div class="app-class-error" *ngIf="formControle.author.invalid && (formControle.author.dirty || formControle.author.touched)">
+    Please enter author.
+  </div>
+  <br>
+  <mat-form-field>
+    <textarea matInput type="text" formControlName='body' placeholder="Body"></textarea>
+  </mat-form-field>
+  <div class="app-class-error" *ngIf="formControle.body.invalid && (formControle.body.dirty || formControle.body.touched)">
+    Please enter body.
+  </div>
+  <br>
+  <mat-slide-toggle formControlName="hidden">Hidden</mat-slide-toggle>
+</div>
+<div class="app-logo">
+  <button mat-button (click)="submit()">Submit</button>
+</div>
